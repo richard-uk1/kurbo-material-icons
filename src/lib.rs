@@ -42,4 +42,5 @@ impl Shape for IconPath {
     }
 }
 
-include!("./icons.rs.in");
+mod icon_paths;
+pub use icon_paths::normal as icons;
