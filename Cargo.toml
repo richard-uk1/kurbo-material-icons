@@ -1,21 +1,18 @@
 [package]
-name = "druid-material-icons"
+name = "kurbo-material-icons"
 description = "Material icons, converted to kurbo paths"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/derekdreery/druid-material-icons"
-version = "0.2.0"
+repository = "https://github.com/richard-uk1/kurbo-material-icons"
+version = "0.0.1"
 authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
-edition = "2018"
+edition = "2024"
 exclude = ["material-design-icons", "test.sh"]
 
 [features]
-default = ["druid"]
+default = []
 
 [dependencies]
-# We only use a small amount of druid, so take a chance that we will always be compatible.
-#druid = { git = "https://github.com/linebender/druid", optional = true, rev="0a82b127eac325c9c721364a5d81f1bfd931cb1" }
-druid = { version = "0.8", optional = true }
-kurbo = "0.9"
+kurbo = "0.13.0"
 
 [workspace]
 members = [
